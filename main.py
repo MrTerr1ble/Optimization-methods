@@ -10,10 +10,11 @@ def my_function(x):
 
 def main():
     with open('output.txt', 'w', encoding='utf-8') as f, redirect_stdout(f):
+        print('Метод половинного деления')
         half_division_method(my_function, 3, 5, 0.2)
-
+        print('\n\nМетод «золотого» сечения')
         golden_section(my_function, 3, 5, 0.2)
-
+        print('\n\nМетод чисел Фибоначчи')
         Fibonacci_method(my_function, 3, 5, 0.2)
 
 
